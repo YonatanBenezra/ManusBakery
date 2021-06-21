@@ -8,7 +8,9 @@ app.use(express.json());
 
 mongoose.connect("mongodb+srv://Flandechocolate:Flandechocolate@datacluster.tp3tc.mongodb.net/postsDatabase"); 
 
+//all routes will be routed to /index.js
 app.use("/", require("./routes/index"))
+
 app.listen(3001, function() { 
   console.log(`Server listening on port 3001.`);
 });
